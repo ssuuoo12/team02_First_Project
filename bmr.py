@@ -26,7 +26,7 @@ class BMRCalculator: # bmr.py
     
     def get_result(self):
         return {
-            "expectation_bmr": round(self.expectation_bmr, 5),
+            "expectation_bmr": round(self.expectation_bmr, 1),
         }
     
      
