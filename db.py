@@ -27,7 +27,7 @@ class Database:
             with self.connection.cursor() as cursor:
                 query = """
                 INSERT INTO bmr_records(gender, age, weight, height, life_style ,expectation_bmr)
-                VALUES (%s, %s, %s, %s, %s, %s)
+                VALUES (%s, %s, %s, %s, %s, %s) 
                 """
                 cursor.execute(query, (gender, age, weight, height, life_style ,expectation_bmr))
             
@@ -63,4 +63,4 @@ class Database:
         """데이터베이스 연결 종료"""
         if self.connection:
             self.connection.close()
-            print("MariaDB 연결이 종료되었습니다.")
+            print("MariaDB 연결이 종ss료되었습니다.")
