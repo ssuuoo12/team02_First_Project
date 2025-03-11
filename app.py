@@ -37,7 +37,7 @@ def calculate():
                               weight=weight,
                               height=height)
     except ValueError:
-        return render_template('index.html', error="유효한 숫자를 입력해주세요.")
+        return render_template('index.html', error="유 숫자를 입력해주세요.")
 
 @app.route('/history')
 def history():
